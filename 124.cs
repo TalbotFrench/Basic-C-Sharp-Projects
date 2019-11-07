@@ -4,20 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VoidMethod
+namespace FullName
 {
     class Program
     {
         static void Main(string[] args)
         {
+            Employee empleado = new Employee();
+            
 
-            Thing stuff = new Thing();
-            int a = 5;
-            int b = 7;
-            int Resultb = stuff.Stuff(a,b);
-            Console.WriteLine(Resultb);
-
+            Console.ReadLine();
         }
-
     }
 }
