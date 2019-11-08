@@ -8,23 +8,17 @@ namespace FullName
 {
     public class Employee : Person, IQuittable
     {
-
-        Person p = new Person("Sample", "Student");
-        Console.WriteLine(p.SayName());
-        int id = 0001;
-
-        void Quit(string a)
+        public void SayName()
         {
-            string a = "You quit!";
-            Console.WriteLine(a);
+            Console.WriteLine("Name: " + firstName + "" + lastName);
+            Console.ReadLine();
         }
+        
 
-        void Quit(string a, int b)
+        void Quit()
         {
-            string a = "You quit";
-            Console.WriteLine(a + b +" times");
+            Console.WriteLine("You Quit");
+            Console.ReadLine();
         }
-
-
-    }
+}
 }

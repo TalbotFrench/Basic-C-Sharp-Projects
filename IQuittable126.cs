@@ -8,9 +8,7 @@ namespace Interface
 {
     public interface IQuittable
     {
-         void Quit()
-        {
-            Console.WriteLine("You Quit");
-        }
+        void Quit();
+        
     }
 }
