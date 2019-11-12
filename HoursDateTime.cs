@@ -15,6 +15,8 @@ namespace DateTimes
             Console.WriteLine("Please input a number");
             int hours = Convert.ToInt32(Console.ReadLine());
             DateTime dateTime = new DateTime(2019, 11, 12, hours, 6, 30);
+            Console.WriteLine(dateTime);
+            Console.Read();
 
 
 
