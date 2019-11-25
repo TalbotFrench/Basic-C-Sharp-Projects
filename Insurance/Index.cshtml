@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "Sauls Insurance";
+}
+
+    <div class="jumbotron">
+        <h1>Sauls Insurance</h1>
+        <p class="lead">You will be asked to enter certain infomation in order to give you an accurate insurance estimate</p>
+    </div>
+<div class="card-body">
+@using (Html.BeginForm("UserInput", "Home", FormMethod.Post))
+{
+<div class="row">
+        <div class="col-md-4">
+            <h2>Personal Info</h2>
+            <div class="row no-gutters">
+                <div class="form-group col-md-12">
+                    <p>Enter your First Name</p>
+                    <input name="FirstName" type="text" class="form-control" placeholder="First Name" />
+                </div>
+                <div class="form-group col-md-12">
+                    <p>Enter your Last Name</p>
+                    <input name="LastName" type="text" class="form-control" placeholder="Last Name" />
+                </div>
+                <div class="form-group col-md-12">
+                    <p>Enter your email address</p>
+                    <input name="EmailAddress" type="email" class="form-control" placeholder="EmailAddress" />
+                </div>
+                <div class="form-group col-md-12">
+                    <p>Enter the year you were born</p>
+                    <input name="DateOfBirth" type="number" class="form-control" placeholder="Birth Year" />
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <h2>Car Info</h2>
+                <div class="form-group col-md-12">
+                    <p>Enter your Vehicles Year</p>
+                    <input name="CarYear" type="number" class="form-control" placeholder="Year of Vehicle" />
+                </div>
+                <div class="form-group col-md-12">
+                    <p>Enter your Vehicles Make</p>
+                    <input name="CarMake" type="text" class="form-control" placeholder="Car Make" />
+                </div>
+                <div class="form-group col-md-12">
+                    <p>Enter your Vehicles Model</p>
+                    <input name="CarModel" type="text" class="form-control" placeholder="Car Model" />
+                </div>
+
+                <p><a class="submit"></a></p>
+            </div>
+            <div class="row no-gutters">
+                <h2>Driving History</h2>
+
+                <div class="form-group col-md-12">
+                    <p>Check if you have had a DUI</p>
+                    <input name="Dui" type="checkbox" class="form-control" />
+                </div>
+                <div class="form-group col-md-12">
+                    <p>How many speeding tickets have you had?</p>
+                    <input name="SpeedingTickets" type="number" class="form-control" placeholder="How many Speeding Tickets" />
+                </div> 
+                <div class="form-group col-md-12">
+                    <p>Check if you would like full coverage</p>
+                    <input name="FullCoverage" type="checkbox" class="form-control" />
+                </div>
+
+            </div>
+            <button type="submit" class="btn btn-block btn-primary">Submit</button>
+        </div>
+    </div>
+        }
+    </div>
+
+
