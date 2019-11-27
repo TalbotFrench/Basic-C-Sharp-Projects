@@ -19,18 +19,10 @@ namespace InsuranceAppMVC.Controllers
         {
             return View();
         }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "You can reach us here.";
-
-            return View();
-        } 
-   
-
     [HttpPost]
     public ActionResult UserInput(string firstName, string lastName, string emailAddress, int dateOfBirth, int carYear, string carMake, string carModel, bool dui, int speedingTickets, bool fullCoverage)
     {
+            var userinput = new UserInput();
         if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName) || string.IsNullOrEmpty(emailAddress))
         {
             return View("~/Views/Shared/Error.cshtml");
@@ -50,10 +42,10 @@ namespace InsuranceAppMVC.Controllers
                     signup.DUI = dui;
                     signup.SpeedingTickets = speedingTickets;
                     signup.FullCoverage = fullCoverage;
-
                 db.UserInputs.Add(signup);
                 db.SaveChanges();
             }
+                
                 int quote = 50;
                 if (dateOfBirth < 25 || dateOfBirth > 100)
                 {
@@ -71,17 +63,17 @@ namespace InsuranceAppMVC.Controllers
                                 {
                                     quote = quote + 25;
                                     if (speedingTickets > 0)
-                                    {
+                                    {    var respuesta = string.ToLower(dui)
                                         quote = quote + (speedingTickets * 10);
                                         if (dui == true)
                                         {
                                             int percent = (quote / 4);
                                             quote = (quote + percent);
+                                           
                                             if (fullCoverage == true)
                                             {
                                                 int covpercent = (quote / 2);
                                                 quote = (quote + covpercent);
-
                                                 return View("Success" + quote);
                                             }
                                             else
@@ -93,13 +85,11 @@ namespace InsuranceAppMVC.Controllers
                                         {
                                             return View("Success" + quote);
                                         }
-
                                     }
                                     else
                                     {
                                         return View("Success" + quote);
                                     }
-
                                 }
                                 else
                                 {
