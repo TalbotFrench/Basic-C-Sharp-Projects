@@ -8,14 +8,23 @@ namespace _117
 {
     class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             DivideByTwo div = new DivideByTwo();
 
             Console.WriteLine("Enter a number");
             int A = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(div.Divide(A));
+            div.Divide(A);
+            
 
+            Console.WriteLine("Enter another number");
+            int B = Convert.ToInt32(Console.ReadLine());
+            div.Divide(B);
+            
+
+            
+
+            Console.ReadLine();
 
         }
     }
