@@ -1,0 +1,6 @@
+C:\Users\talbo\source\repos\117\117\bin\Debug\117.exe.config
+C:\Users\talbo\source\repos\117\117\bin\Debug\117.exe
+C:\Users\talbo\source\repos\117\117\bin\Debug\117.pdb
+C:\Users\talbo\source\repos\117\117\obj\Debug\117.csprojAssemblyReference.cache
+C:\Users\talbo\source\repos\117\117\obj\Debug\117.exe
+C:\Users\talbo\source\repos\117\117\obj\Debug\117.pdb
