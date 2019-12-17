@@ -12,7 +12,7 @@ namespace VoidMethod
         {
             int ar = a / 2;
             Console.WriteLine(b);
-            return;
+            
            
         }
     }

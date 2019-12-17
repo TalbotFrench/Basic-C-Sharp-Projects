@@ -14,7 +14,7 @@ namespace VoidMethod
             Thing stuff = new Thing();
             int a = 5;
             int b = 7;
-            int Resultb = stuff.Stuff(a,b);
+            int Resultb = stuff.Stuff(a: a, b: b);
             Console.WriteLine(Resultb);
 
         }
