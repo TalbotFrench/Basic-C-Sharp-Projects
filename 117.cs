@@ -14,12 +14,13 @@ namespace _117
 
             Console.WriteLine("Enter a number");
             int A = Convert.ToInt32(Console.ReadLine());
-            div.Divide(A);
+            div.Divide(numA: A);
             
 
             Console.WriteLine("Enter another number");
             int B = Convert.ToInt32(Console.ReadLine());
-            div.Divide(B);
+            div.Divide(numA: A, numB: B);
+            
             
 
             
