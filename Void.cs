@@ -15,7 +15,7 @@ namespace VoidMethod
             int a = 5;
             int b = 7;
             stuff.Stuff(a: a, b: b);
-            Console.WriteLine(stuff.Stuff(a: a, b: b));
+            Console.Read();
 
         }
 
