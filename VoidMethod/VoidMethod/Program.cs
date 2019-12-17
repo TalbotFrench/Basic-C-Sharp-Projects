@@ -10,14 +10,6 @@ namespace VoidMethod
     {
         static void Main(string[] args)
         {
-
-            Thing stuff = new Thing();
-            int a = 5;
-            int b = 7;
-            stuff.Stuff(a: a, b: b);
-            Console.WriteLine(stuff.Stuff(a: a, b: b));
-
         }
-
     }
 }
