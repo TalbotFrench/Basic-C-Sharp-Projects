@@ -15,7 +15,7 @@ namespace CodeFirstNewDatabaseSample
 
             using (var db = new BloggingContext())
             {
-                Console.Write("Enter a name for a new Blog: ");
+                Console.Write("Enter a name for your new Blog: ");
                 var name = Console.ReadLine();
 
                 var blog = new Blog { Name = name };
