@@ -15,12 +15,18 @@ namespace _117try2
 
                 Console.WriteLine("Enter a number");
                 int A = Convert.ToInt32(Console.ReadLine());
-                div.Divide(numA: A);
+                div.Divide(A);
+                int c = 100;
+                
+
+                Console.WriteLine("Before method call, value of c: {0}", c);
+                div.Plain(out c);
+                Console.WriteLine("After method call, value of c: {0}", c);
 
 
                 Console.WriteLine("Enter another number");
                 int B = Convert.ToInt32(Console.ReadLine());
-                div.Divide(numA: A, numB: B);
+                div.Divide(numA: A, numB: B);   
 
 
 
@@ -30,4 +36,5 @@ namespace _117try2
 
             }
         }
+    }
 }

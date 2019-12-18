@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace _117try2
 {
-    class Class1
+    class DivideByTwo
     {
         public void Divide(int numA)
         {
-            numA = numA / 2;
-
+            int numB = (numA / 2);
+            Console.WriteLine(numB);
         }
 
         public void Divide(int numA, int numB)
@@ -22,10 +22,10 @@ namespace _117try2
 
 
         public static int numG;
-        static void Plain()
+        public  void Plain(out int numG)
         {
             numG = 10;
-            Console.WriteLine(numG);
+            
         }
     }
 }

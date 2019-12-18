@@ -1,0 +1,6 @@
+C:\Users\talbo\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\117try2\117try2\bin\Debug\117try2.exe.config
+C:\Users\talbo\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\117try2\117try2\bin\Debug\117try2.exe
+C:\Users\talbo\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\117try2\117try2\bin\Debug\117try2.pdb
+C:\Users\talbo\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\117try2\117try2\obj\Debug\117try2.csprojAssemblyReference.cache
+C:\Users\talbo\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\117try2\117try2\obj\Debug\117try2.exe
+C:\Users\talbo\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\117try2\117try2\obj\Debug\117try2.pdb
